@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos | Bot Blåhaj</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+</head>
+
+<body>
+    <nav style="margin:0% 20% 0% 20%; min-width:900px; max-width:1200px;">
+        <!--Menu de navegacion para todas las paginas-->
+        <ul style="display:flex; gap:30px">
+            <li><a href="index.html">Bot Blåhaj</a></li>
+            <li><a href="info.html">Información</a></li>
+            <li><a href="commands.html">Comandos</a></li>
+            <li> <!--Desplegable de recursos-->
+                <details>
+                    <summary style="cursor:pointer;">Recursos</summary>
+                    <ul style="position: absolute;">
+                        <li><a href="">Soporte</a></li>
+                        <li><a href="../ROADMAP.md">Roadmap</a></li>
+                        <li><a href="">Estado</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li style="margin-left: auto;"> <!--Desplegable de Idiomas-->
+                <details>
+                    <summary style="cursor:pointer;">Idioma</summary>
+                    <ul style="position: absolute;">
+                        <li><a href="">EJpaño</a></li>
+                        <li><a href="">Gringo</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="">Tema Oscuro</a></li>
+            <li><a href="">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main style="margin:3% 20% 0% 20%">
+        <h2>Comandos del Bot</h2>
+        <div style="display: flex; flex-direction: column">
+
+            <details> <!-- Comando Automod -->
+                <summary style="cursor:pointer;"><strong>Automod</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Gestiona los modulos para canales solo media / solo texto.</p>
+                    <p> <strong>Uso:</strong> <code> /config_canales [accion]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Autoroles -->
+                <summary style="cursor:pointer;"><strong>Autoroles</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Asigna roles automaticamente a los usuarios que entran al servidor.</p>
+                    <p> <strong>Uso:</strong> <code> /config_autoroles [estado] [canal] [rol]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Logs -->
+                <summary style="cursor:pointer;"><strong>Logs</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Configura el envío de registros sobre distintas acciones del servidor.</p>
+                    <p> <strong>Uso:</strong> <code> /config_logs [evento] [estado] [canal]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Protecciones -->
+                <summary style="cursor:pointer;"><strong>Protecciones</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Gestiona los modulos del automod para el servidor.</p>
+                    <p> <strong>Uso:</strong> <code> /config_protecciones [estado]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Invite -->
+                <summary style="cursor:pointer;"><strong>Invite</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Genera una invitación manual para el bot.</p>
+                    <p> <strong>Uso:</strong> <code> /invite</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Invites Info -->
+                <summary style="cursor:pointer;"><strong>Invite Info</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Muestra las personas invitadas por un usuario.</p>
+                    <p> <strong>Uso:</strong> <code> /invites [user]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Ping -->
+                <summary style="cursor:pointer;"><strong>Utilidad</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Muestra el estado interno del bot y la latencia actual.</p>
+                    <p> <strong>Uso:</strong> <code> /ping</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Reload -->
+                <summary style="cursor:pointer;"><strong>Sistema</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Recarga un modulo del bot (solo para el creador o Dueño).</p>
+                    <p> <strong>Uso:</strong> <code> /reload [nombre]</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Roadmap -->
+                <summary style="cursor:pointer;"><strong>Info</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Muestra el progreso y las actualizaciones recientes del bot.</p>
+                    <p> <strong>Uso:</strong> <code> /roadmap</code> </p>
+                </div>
+            </details>
+
+            <details> <!-- Comando Resumen -->
+                <summary style="cursor:pointer;"><strong>IA</strong> </summary>
+                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
+                    <p>Genera un resumen del chat de un canal en un rango de tiempo usando la IA.</p>
+                    <p> <strong>Uso:</strong> <code> /resumen [canal] [tiempo]</code> </p>
+                </div>
+            </details>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    color: #ffffff;
+    background: linear-gradient(135deg,
+            #0a192f,
+            #112240,
+            #0d1117,
+            #000000);
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Comic sans MS";
+    color: #6f7bff;
+}
+
+/* animacion logo */
+.saltaloconejo {
+    animation: flotar 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px #6fadff);
+}
+
+/* animacion boton invitacion */
+a {
+    display: inline-flex;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6f7bff;
+    border-radius: 999px;
+    padding: 0.95rem 1.4rem;
+    font-weight: 700;
+    box-shadow: 0 0 0 #5865f2b8, 0 10px 22px #5865f26b;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 1.9s infinite;
+}
+
+/* keyframes logo */
+@keyframes flotar {
+    0% {
+        /* donde esta quieto */
+        transform: translateY(0px);
+    }
+
+    50% {
+        /* se mueve 20 px abajo */
+        transform: translateY(-20px);
+    }
+
+    100% {
+        /* vuelve a su sitio */
+        transform: translateY(0px);
+    }
+}
+
+/* animacion del enlade de invitacion*/
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #5865f2b8, 0 10px 22px #5865f26b;
+    }
+
+    70% {
+        box-shadow: 0 0 0 16px #5865f200, 0 10px 22px #5865f26b;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #5966f200, 0 10px 22px #5865f26b;
+    }
+}
