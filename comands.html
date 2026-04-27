@@ -6,42 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comandos | Bot Blåhaj</title>
     <link rel="icon" href="imagenes/logo.png" type="image/png">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-    <nav style="margin:0% 20% 0% 20%; min-width:900px; max-width:1200px;">
-        <!--Menu de navegacion para todas las paginas-->
-        <ul style="display:flex; gap:30px">
-            <li><a href="index.html">Bot Blåhaj</a></li>
+    <nav class="navegacion"> <!--Menu de navegacion para todas las paginas-->
+        <ul style="display:flex; gap:30px ;margin:0% 20% 0% 20%"> <!--display:flex, la flexibox que pedias-->
+            <li><a href="index.html"><img style="max-width: 26px;" src="imagenes/logo.png"></a></li>
             <li><a href="info.html">Información</a></li>
-            <li><a href="commands.html">Comandos</a></li>
+            <li><a href="comands.html"><u>Comandos</u></a></li>
             <li> <!--Desplegable de recursos-->
                 <details>
                     <summary style="cursor:pointer;">Recursos</summary>
                     <ul style="position: absolute;">
                         <li><a href="">Soporte</a></li>
-                        <li><a href="../ROADMAP.md">Roadmap</a></li>
+                        <li><a href="">Roadmap</a></li>
                         <li><a href="">Estado</a></li>
                     </ul>
                 </details>
             </li>
             <li style="margin-left: auto;"> <!--Desplegable de Idiomas-->
                 <details>
-                    <summary style="cursor:pointer;">Idioma</summary>
+                    <summary style="cursor:pointer;">🇪🇸 ES</summary>
                     <ul style="position: absolute;">
-                        <li><a href="">EJpaño</a></li>
-                        <li><a href="">Gringo</a></li>
+                        <li><a href="">🇪🇸 EJpaño</a></li>
+                        <li><a href="">🇬🇧 Gringo</a></li>
                     </ul>
                 </details>
             </li>
-            <li><a href="">Tema Oscuro</a></li>
             <li><a href="">Iniciar Sesión</a></li>
         </ul>
     </nav>
 
     <main style="margin:3% 20% 0% 20%">
         <h2>Comandos del Bot</h2>
-        <div style="display: flex; flex-direction: column">
+        <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap:30px;">
 
             <details> <!-- Comando Automod -->
                 <summary style="cursor:pointer;"><strong>Automod</strong> </summary>
