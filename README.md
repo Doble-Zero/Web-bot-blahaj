@@ -18,4 +18,8 @@
     - en comandos.html intentado hacer un desplegable con toda la informacion de los comando utilizando lo mismo que en el navbar, pero se sopala uno encima del otro. (solucionado ya).
     - añadido un css interno muy basico para ajustar los marjenes y otras cosas.
 #### [Día 3]:
-    - añadido el css de index.html con animaciones y un botom insirados en otras webs.
+    - creado el css de index.html con animaciones y un botom insirados en otras webs.
+#### [Día 4]:
+    - creado el css para el navbar.
+    - modificado index.html y comandos.html para adaptarlo al nuevo css.
+    - ajustado la descripcion del bot en info.html.
