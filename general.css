@@ -1,27 +1,19 @@
 body {
-    color: #ffffff;
-    background: linear-gradient(135deg,
-            #0a192f,
-            #112240,
-            #0d1117,
-            #000000);
+    font-family: "Comic sans MS";
+    color: #6f7bff;
+    background: linear-gradient(135deg, #0a192f, #112240, #0d1117, #112240, #0a192f);
     min-height: 100vh;
     margin: 0;
 }
 
-h1 {
-    font-family: "Comic sans MS";
-    color: #6f7bff;
-}
-
-/* animacion logo */
 .saltaloconejo {
+    /* animacion logo */
     animation: flotar 3s ease-in-out infinite;
     filter: drop-shadow(0 0 20px #6fadff);
 }
 
-/* animacion boton invitacion */
-a {
+.botomcito {
+    /* animacion boton invitacion */
     display: inline-flex;
     gap: 0.65rem;
     text-decoration: none;
@@ -35,8 +27,9 @@ a {
     animation: pulse 1.9s infinite;
 }
 
-/* keyframes logo */
 @keyframes flotar {
+
+    /* keyframes logo */
     0% {
         /* donde esta quieto */
         transform: translateY(0px);
@@ -53,8 +46,9 @@ a {
     }
 }
 
-/* animacion del enlade de invitacion*/
 @keyframes pulse {
+
+    /* animacion del enlade de invitacion*/
     0% {
         box-shadow: 0 0 0 0 #5865f2b8, 0 10px 22px #5865f26b;
     }
