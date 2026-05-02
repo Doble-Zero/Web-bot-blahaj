@@ -1,0 +1,87 @@
+main {
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.bloques {
+    border-radius: 10px;
+    background-color: #162340;
+    border: 1px solid #ffffff1a;
+    padding: 15px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: background-color 0.9s;
+}
+
+.bloques:hover {
+    background-color: #28406e;
+}
+
+.bottom-beta {
+    background-color: #ff9800;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bottom-normal {
+    background-color: #4CAF50;
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titulo>div {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.descripcion {
+    font-size: 0.9em;
+    color: #ffffffa6;
+}
+
+
+
+/* Convertir el summary en flex para separar texto y flecha */
+.flechita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* Oculta la flecha por defecto en navegadores basados en WebKit (Chrome/Safari) */
+.flechita::-webkit-details-marker {
+    display: none;
+}
+
+/* Añade una nueva flecha personalizada a la derecha */
+.flechita::after {
+    content: "▼";
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+/* Gira la flecha cuando el desplegable está abierto */
+.flechita[open] ::after {
+    transform: rotate(180deg);
+}
