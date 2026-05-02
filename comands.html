@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comandos | Bot Blåhaj</title>
     <link rel="icon" href="imagenes/logo.png" type="image/png">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/comandos.css">
 </head>
 
 <body>
@@ -18,10 +19,10 @@
             <li><a href="comands.html"><u>Comandos</u></a></li>
             <li> <!--Desplegable de recursos-->
                 <details>
-                    <summary style="cursor:pointer;">Recursos</summary>
+                    <summary style="cursor:pointer;">Recursos </summary>
                     <ul style="position: absolute;">
                         <li><a href="">Soporte</a></li>
-                        <li><a href="">Roadmap</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
                         <li><a href="">Estado</a></li>
                     </ul>
                 </details>
@@ -39,87 +40,240 @@
         </ul>
     </nav>
 
-    <main style="margin:3% 20% 0% 20%">
+    <main style="margin:3% 20% 5% 20%">
         <h2>Comandos del Bot</h2>
-        <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap:30px;">
+        <p>Una descripcion de cada uno de los comandos del bot:</p>
+        <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap:15px;">
 
-            <details> <!-- Comando Automod -->
-                <summary style="cursor:pointer;"><strong>Automod</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Gestiona los modulos para canales solo media / solo texto.</p>
-                    <p> <strong>Uso:</strong> <code> /config_canales [accion]</code> </p>
+            <!-- Comando config_canales -->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Config Canales
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Añade canales solo media o canales solo texto.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /config_canales [accion]</code> </p>
+                    <p>Opciones:</p>
+                    <details>
+                        <summary>Acciones</summary>
+                        <ul>
+                            <li> Ver configuarcion</li>
+                            <li> Solo media > Añadir canal</li>
+                            <li> Solo media > Eliminar canal</li>
+                            <li> Solo texto > Añadir canal</li>
+                            <li> Solo texto > Eliminar canal</li>
+                        </ul>
+                    </details>
                 </div>
             </details>
 
-            <details> <!-- Comando Autoroles -->
-                <summary style="cursor:pointer;"><strong>Autoroles</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Asigna roles automaticamente a los usuarios que entran al servidor.</p>
-                    <p> <strong>Uso:</strong> <code> /config_autoroles [estado] [canal] [rol]</code> </p>
+            <!-- Comando config_autoroles -->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Config Autoroles
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Asigna roles automaticamente a los usuarios que escriban en un
+                            canal.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /config_autoroles [estado] [canal] [rol]</code> </p>
+                    <p>Opciones:</p>
+                    <details>
+                        <summary>Estado</summary>
+                        <ul>
+                            <li>Activar</li>
+                            <li>Desactivar</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Canal</summary>
+                        <ul>
+                            <li>Selecciona el canal donde se activara</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Rol</summary>
+                        <ul>
+                            <li>Rol a asignar</li>
+                        </ul>
+                    </details>
                 </div>
             </details>
 
-            <details> <!-- Comando Logs -->
-                <summary style="cursor:pointer;"><strong>Logs</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Configura el envío de registros sobre distintas acciones del servidor.</p>
-                    <p> <strong>Uso:</strong> <code> /config_logs [evento] [estado] [canal]</code> </p>
+            <!-- Comando config_logs  -->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Config Logs
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Configura donde se envian cada uno de los logs.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /config_logs [accion]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
-            <details> <!-- Comando Protecciones -->
-                <summary style="cursor:pointer;"><strong>Protecciones</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Gestiona los modulos del automod para el servidor.</p>
-                    <p> <strong>Uso:</strong> <code> /config_protecciones [estado]</code> </p>
+            <!-- Comando config_pole-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-beta">BETA</span>Config Pole
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Configura el minijuego Pole.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /config_pole [estado] [canal]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
-            <details> <!-- Comando Invite -->
-                <summary style="cursor:pointer;"><strong>Invite</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Genera una invitación manual para el bot.</p>
-                    <p> <strong>Uso:</strong> <code> /invite</code> </p>
+            <!-- Comando config_protecciones -->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Config Protecciones
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Configura los diferestes tipos de protecciones para el
+                            servidor.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /config_protecciones [accion]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
-            <details> <!-- Comando Invites Info -->
-                <summary style="cursor:pointer;"><strong>Invite Info</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Muestra las personas invitadas por un usuario.</p>
-                    <p> <strong>Uso:</strong> <code> /invites [user]</code> </p>
+            <!-- Comando invite-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Invite
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Genera una invitación manual para el bot.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /invite</code> </p>
                 </div>
             </details>
 
-            <details> <!-- Comando Ping -->
-                <summary style="cursor:pointer;"><strong>Utilidad</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Muestra el estado interno del bot y la latencia actual.</p>
-                    <p> <strong>Uso:</strong> <code> /ping</code> </p>
+            <!-- Comando invites-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Invites
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Muestra las personas invitadas por un usuario.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /invites [usuario]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
-            <details> <!-- Comando Reload -->
-                <summary style="cursor:pointer;"><strong>Sistema</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Recarga un modulo del bot (solo para el creador o Dueño).</p>
-                    <p> <strong>Uso:</strong> <code> /reload [nombre]</code> </p>
+            <!-- Comando invites_name-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-beta">BETA</span>Invites Name
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Asigna un alias a una invitación para identificarla.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /invites_name [code] [name]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
-            <details> <!-- Comando Roadmap -->
-                <summary style="cursor:pointer;"><strong>Info</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Muestra el progreso y las actualizaciones recientes del bot.</p>
-                    <p> <strong>Uso:</strong> <code> /roadmap</code> </p>
+            <!-- Comando ping-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-normal">BOT</span>Ping
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Muestra el estado del bot.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /ping</code> </p>
                 </div>
             </details>
 
-            <details> <!-- Comando Resumen -->
-                <summary style="cursor:pointer;"><strong>IA</strong> </summary>
-                <div style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px;">
-                    <p>Genera un resumen del chat de un canal en un rango de tiempo usando la IA.</p>
-                    <p> <strong>Uso:</strong> <code> /resumen [canal] [tiempo]</code> </p>
+            <!-- Comando Pole-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-beta">BETA</span>Pole
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Minijuego de la pole, muestra los ranquis y reglas.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /pole [accion]</code> </p>
+                    <p>Opciones:</p>
+                </div>
+            </details>
+
+            <!-- Comando roadmap-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-beta">BETA</span>Roadmap
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Muestra la hoja de ruta del bot.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /roadmap</code> </p>
+                </div>
+            </details>
+
+            <!-- Comando resumen-->
+            <details name="comandos" class="bloques">
+                <summary class="flechita" style="cursor:pointer;">
+                    <div class="titulo">
+                        <div> <!--Titulo-->
+                            <span class="bottom-beta">BETA</span>Resumen (temporalmente desactivado)
+                        </div> <!--Descripcion-->
+                        <span class="descripcion">Genera un resumen de los mensajes en un canal.</span>
+                    </div>
+                </summary>
+                <hr>
+                <div> <!--Informacion del comando-->
+                    <p> <strong>Ejemplo:</strong> <code> /resumen [canal] [tiempo]</code> </p>
+                    <p>Opciones:</p>
                 </div>
             </details>
 
