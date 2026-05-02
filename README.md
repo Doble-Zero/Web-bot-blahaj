@@ -1,11 +1,12 @@
 # Diario de Desarrollo - Web del Bot Blåhaj
 
 ## 1. Trabajando Actualmente
-- [ ] Añadir los comandos restantes en `español.xml` y en el html.
+- [ ] Css de commands.html
 
-
-## 2. Cosas por Hacer
+## 2. Cosas por Hacer pospuestas
 - [ ] Hacer el DTL 
+- [ ] mix with: 800px 
+- [ ] Ajustar tamaño letras roadmap.html
 
 ## 3. Diario de Desarrollo
 #### [Día 1]:
@@ -23,3 +24,9 @@
     - creado el css para el navbar.
     - modificado index.html y comandos.html para adaptarlo al nuevo css.
     - ajustado la descripcion del bot en info.html.
+#### [Día 5]:
+    - Termiando el ccs de info.html.
+    - Creado roadmap.html y roadmap.css
+#### [Día 6]:
+    - Terminado de añadir los comandos restantes en comandos.html 
+    - Mejorar el diseño de las listas de comandos en comandos.html
