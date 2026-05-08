@@ -1,8 +1,9 @@
 .navegacion {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
-    background-color: #00000033;
-    backdrop-filter: blur(10px);
+    background-color: #ffffff0d;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #ffffff1a;
     padding: 7px 0px 7px 0px;
 
     position: sticky;
@@ -28,4 +29,31 @@
     text-decoration: none;
     list-style: none;
     color: #ffffff;
+}
+
+/* quita la flechita x defecto */
+.navegacion summary::-webkit-details-marker {
+    display: none;
+}
+
+.navegacion summary {
+    list-style: none;
+    /* Para Firefox y otros */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Dibujar la flechita */
+.navegacion summary::after {
+    content: "▼";
+    font-size: 0.7em;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+/* flechita abierta */
+.navegacion details[open] summary::after {
+    transform: rotate(180deg);
+    color: #6fe5ff;
 }
