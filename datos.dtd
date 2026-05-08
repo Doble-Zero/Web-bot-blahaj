@@ -1,5 +1,0 @@
-<!-- Ejemplo 1: Cómo definir una etiqueta simple que solo contiene texto -->
-<!-- <!ELEMENT nombre_de_tu_etiqueta (#PCDATA)> -->
-
-<!-- Ejemplo real basándonos en tu XML (quitándole los comentarios): -->
-<!ELEMENT titulo1 (#PCDATA)>
