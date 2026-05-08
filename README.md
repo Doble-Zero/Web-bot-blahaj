@@ -1,12 +1,13 @@
 # Diario de Desarrollo - Web del Bot Blåhaj
 
-## 1. Trabajando Actualmente
-- [ ] Css de commands.html
-
-## 2. Cosas por Hacer pospuestas
+## 1. Cosas por Hacer
 - [ ] Hacer el DTL 
 - [ ] mix with: 800px 
 - [ ] Ajustar tamaño letras roadmap.html
+- [ ] Adjuntar los enlaces de soporte.
+
+## 2. Fallos
+- [ ] Despegables de la navbar se ven mal.
 
 ## 3. Diario de Desarrollo
 #### [Día 1]:
@@ -30,3 +31,11 @@
 #### [Día 6]:
     - Terminado de añadir los comandos restantes en comandos.html 
     - Mejorar el diseño de las listas de comandos en comandos.html
+#### [Día 7]:
+    - Añadido la fechita al navbar.
+    - Ajustado el tema del navbar, info.
+    - Mejorado el fondo, añadido dos bolas efecto aurora
+    - creado carpetas para los 2 idiomas
+    - traducido info.html, comands.html al 50%
+    - creado datos.xml el anterio se va a la mierda.
+    
