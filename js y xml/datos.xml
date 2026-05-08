@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+
+    <!-- ALTA PRIORIDAD -->
+    <p.alta>   
+        <tarea>
+            <titulo>Web</titulo>
+            <prioridad>Alta</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Una pagina web simple donde muestre como funciona y ejemplos de los comandos.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Traducción del bot</titulo>
+            <prioridad>Alta</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Traducir los comandos del bot al Inglés. (60% completado)</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>/help</titulo>
+            <prioridad>Alta</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Comando que envíe un embed con instrucciones de uso y un link a la web.</descripcion>
+        </tarea>
+    </p.alta>
+
+
+    <!-- MEDIA PRIORIDAD -->
+    <p.media>   
+        <tarea>
+            <titulo>Auto-Moderación Avanzada</titulo>
+            <prioridad>Media</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Implementar Filtro de mayúsculas y un Anti-Spam mejorado (mensajes repetidos, menciones masivas).</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Copias de Seguridad</titulo>
+            <prioridad>Media</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Sistema automático para respaldar la configuración de los servidores de manera regular.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Comandos de Moderación Manual</titulo>
+            <prioridad>Media</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Implementar comandos como /purge (limpieza masiva), /warn (advertencias acumulativas) y /tempban (baneos temporales).</descripcion>
+        </tarea>
+    </p.media>
+
+
+    <!-- BAJA PRIORIDAD -->
+    <p.baja>   
+        <tarea>
+            <titulo>Dashboard Web</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Un panel web interactivo para configurar el bot sin tener que usar comandos directamente en Discord.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Más Juegos (Ruleta Rusa)</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Añadir comando !click ruleta rusa: Juego que mutea o kickea aleatoriamente a un usuario del canal.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Global Ban</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Base de datos central para registrar usuarios maliciosos en todos los servidores que usan el bot.</descripcion>
+        </tarea>
+    </p.baja>
+
+
+    <!-- COMPLETADO -->
+    <completado>   
+        <tarea>
+            <titulo>Dockerización Completa</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Despliegue mediante Dockerfile y docker-compose.yml, eliminando dependencias de Windows y archivos .bat heredados.</descripcion>
+            <fecha>16/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Unificación de Logs</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Migración completa de todas las llamadas logging root a instancias logger por módulo.</descripcion>
+            <fecha>22/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Traducción de Eventos (i18n)</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Localización (ES/EN) de los 11 archivos de eventos para soportar servidores en varios idiomas.</descripcion>
+            <fecha>18/03/2026</fecha>
+        </tarea>
+    </completado>
+
+    
+    <errores>  <!-- ERRORES -->
+    </errores>
+
+</datos>

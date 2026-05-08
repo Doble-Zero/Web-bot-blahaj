@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bot SYSTEM "datos.dtd">
+
+<datos>     <!-- Todo el contenido dela web -->
+    
+    <!-- Barra de navegacion -->
+    <barrita>
+        <elemento tipo="inicio">Inicio</elemento>
+        <elemento tipo="info">Información</elemento>
+        <elemento tipo="comandos">Comandos</elemento>
+        <elemento tipo="tema">Tema</elemento>
+        <elemento tipo="login">Iniciar Sesión</elemento>
+        <!-- Recursos -->
+        <menu_desplegable nombre="Recursos">
+            <opcion>Soporte</opcion>
+            <opcion>Roadmap</opcion>
+            <opcion>Estado</opcion>
+        </menu_desplegable>
+        <!-- Idiomas -->
+        <elemento tipo="idioma">Idioma</elemento>
+        <menu_desplegable nombre="idioma">
+            <opcion>Español</opcion>
+            <opcion>English</opcion>
+        </menu_desplegable>
+    </barrita>
+
+
+    <!-- Informacion -->
+    <info>
+        <titulo1>Bot Blåhaj tu bot para monitorizacion de servidores</titulo1>
+        <descripcion1>es un bot de discord creado por Doble es una herramienta para ayudar a la moderación de tu servidor, proporcionando información útil sobre los usuarios, registros de entradas y salidas del server, invitaciones creadas.....etc</descripcion1>
+        <boton1>Invitar al bot</boton1>
+        <boton2>Soporte</boton2>
+    </info>
+
+
+    <!-- Descripcion -->
+    <descripcion>
+        <titulo2>¿Qué hace exactamente el bot?</titulo2>
+        <subtitulo1>Info de Usuarios</subtitulo1>
+        <descripcion1>Analiza, aprueba y monitoriza el listado completo de miembros del servidor, extrayendo datos concretos de acceso.</descripcion1>
+        <subtitulo2>Moderación Avanzada</subtitulo2>
+        <descripcion2>Desde autorroles, antilinks, canales solo texto o fotos hasta logs avanzados, el bot te permite administrar automaticamente tu servidor de la forma mas facil y eficiente.</descripcion2>
+        <subtitulo3>Configuración a Medida</subtitulo3>
+        <descripcion3>Cuenta con infinidad de canales configurables (logs, rol automático, protecciones...) para blindar el servidor.</descripcion3>
+    </descripcion>
+    
+
+    <!-- Comandos y descipciones -->
+    <comandos>
+
+        <!-- config_automod_canales.py -->
+        <comando tipo="automod">
+            <nombre> automod </nombre>
+            <categoria> Automod </categoria>
+            <descripcion_cmd> Gestiona los modulos para canales solo media / solo texto </descripcion_cmd>
+            <uso> /config_canales [accion] </uso>
+        </comando>
+        
+        <!-- config_autoroles.py -->
+        <comando tipo="autoroles">
+            <nombre> Autoroles </nombre>
+            <categoria> Autoroles </categoria>
+            <descripcion_cmd> Asigna roles automaticamente a los usuarios que entran al servidor. </descripcion_cmd>
+            <uso> /config_autoroles [estado] [canal] [rol] </uso>
+        </comando>
+
+        <!-- config_logs.py -->
+        <comando tipo="logs">
+            <nombre> logs </nombre>
+            <categoria> Logs </categoria>
+            <descripcion_cmd> Asigna roles automaticamente a los usuarios que entran al servidor. </descripcion_cmd>
+            <uso> /config_logs [evento] [estado] [canal] </uso>
+        </comando>
+
+        <!-- config_protecciones.py -->
+        <comando tipo="protecciones">
+            <nombre> protecciones </nombre>
+            <categoria> Protecciones </categoria>
+            <descripcion_cmd> Gestiona los modulos del automod para el servidor. </descripcion_cmd>
+            <uso> /config_protecciones [estado] </uso>
+        </comando>
+
+        <!-- invite.py -->
+        <comando tipo="invites">
+            <nombre> invite </nombre>
+            <categoria> invite </categoria>
+            <descripcion_cmd> Genera una invitaccion manual para el bot. </descripcion_cmd>
+            <uso> /invite </uso>
+        </comando>
+
+        <!-- invites_info.py -->
+        <comando tipo="invites">
+            <nombre> invites </nombre>
+            <categoria> invites </categoria>
+            <descripcion_cmd> Muestra las personas invitadas por un usuario. </descripcion_cmd>
+            <uso> /invites [user] </uso>
+        </comando>
+
+        <!-- ping.py -->
+        <comando tipo="ping">
+            <nombre> ping </nombre>
+            <categoria> ping </categoria>
+            <descripcion_cmd> Muestra el estado interno del bot. </descripcion_cmd>
+            <uso> /ping </uso>
+        </comando>
+
+        <!--reload.py-->
+        <comando tipo="reload">
+            <nombre> reload </nombre>
+            <categoria> reload </categoria>
+            <descripcion_cmd> Recarga un modulo del bot (solo owner). </descripcion_cmd>
+            <uso> /reload  [nombre] </uso>
+        </comando>
+
+        <!-- roadmap.py -->
+        <comando tipo="roadmap">
+            <nombre> roadmap </nombre>
+            <categoria> roadmap </categoria>
+            <descripcion_cmd> Muestra el progreso y las actualizaciones recientes del bot. </descripcion_cmd>
+            <uso> /roadmap </uso>
+        </comando>
+
+        <!-- resumen.py -->
+        <comando tipo="resumen">
+            <nombre> resumen </nombre>
+            <categoria> resumen </categoria>
+            <descripcion_cmd> Genera un resumen del chat de un canal en un rango de tiempo. </descripcion_cmd>
+            <uso> /resumen [canal] [tiempo] </uso>
+        </comando>
+
+    </comandos> 
+
+
+</datos>
