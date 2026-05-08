@@ -25,7 +25,7 @@ main {
 
 .descripciones h2 {
     padding: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .descripciones h3 {
@@ -34,11 +34,13 @@ main {
 }
 
 .descripciones li {
+    color: #dddcdc;
     margin: 20px;
     padding: 1px;
     padding-left: 15px;
     padding-right: 5%;
     list-style: none;
-    background-color: #022233;
+    background-color: #ffffff0d;
+    border: 1px solid #ffffff1a;
     border-radius: 10px;
 }
