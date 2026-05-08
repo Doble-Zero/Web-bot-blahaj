@@ -8,21 +8,51 @@ hr {
     background-color: #ffffff;
 }
 
+/* Titulo de la pagina */
+.titulo-principal {
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.titulo-principal h1 {
+    color: #6fe5ff;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #6fe5ff66;
+    letter-spacing: 1px;
+}
+
+.titulo-principal p {
+    color: #b0c4de;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* cada bloque de comandos */
 .bloques {
     border-radius: 10px;
-    background-color: #162340;
+    background-color: #ffffff0d;
     border: 1px solid #ffffff1a;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 15px;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
     transition: background-color 0.9s;
 }
 
 .bloques:hover {
-    background-color: #28406e;
+    background-color: #ffffff14;
+    border: 1px solid #6fe5ff66 !important;
+    /* Brillo cian en el borde al pasar el ratón */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0000004d;
 }
 
+/*  colodel boton beta*/
 .bottom-beta {
     background-color: #ff9800;
     font-size: 0.8em;
@@ -32,6 +62,7 @@ hr {
     vertical-align: middle;
 }
 
+/*  colodel boton normal*/
 .bottom-normal {
     background-color: #4CAF50;
     font-size: 0.8em;
@@ -54,13 +85,18 @@ hr {
     font-size: 1.1em;
 }
 
+/*la  descripcion debajo del titulo*/
 .descripcion {
     font-size: 0.9em;
     color: #ffffffa6;
 }
 
+.descripc.titulo>div>span {
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.7);
+}
 
-
+/* Cambiar la fecha izq x fefecto */
 /* Convertir el summary en flex para separar texto y flecha */
 .flechita {
     display: flex;
@@ -69,19 +105,21 @@ hr {
     list-style: none;
 }
 
-/* Oculta la flecha por defecto en navegadores basados en WebKit (Chrome/Safari) */
+/* quita la flechita x defecto */
 .flechita::-webkit-details-marker {
     display: none;
 }
 
-/* Añade una nueva flecha personalizada a la derecha */
+/* Dibujar la flechita */
 .flechita::after {
     content: "▼";
     font-size: 0.8em;
+    color: #ffffff;
     transition: transform 0.3s ease;
 }
 
-/* Gira la flecha cuando el desplegable está abierto */
-.flechita[open] ::after {
+/* flechita abierta */
+details[open] .flechita::after {
     transform: rotate(180deg);
+    color: #6fe5ff;
 }
