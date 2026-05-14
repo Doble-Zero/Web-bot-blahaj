@@ -57,3 +57,17 @@
     transform: rotate(180deg);
     color: #6fe5ff;
 }
+
+/* --- desplegables del navbar--- */
+.navegacion details ul {
+    background-color: #ffffff0d;
+    border: 1px solid #ffffff1a;
+    padding: 10px 0;
+    margin-top: 10px;
+    min-width: 150px;
+    z-index: 1001;
+}
+
+.navegacion details ul li {
+    padding: 8px 20px;
+}
