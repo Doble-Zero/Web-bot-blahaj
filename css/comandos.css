@@ -1,14 +1,13 @@
 main {
-    color: white;
+    color: #ffffff;
 }
 
 hr {
     border: none;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #6fe5ff;
 }
 
-/* Titulo de la pagina */
 .titulo-principal {
     text-align: center;
     margin: 0 auto 40px auto;
@@ -30,96 +29,136 @@ hr {
     margin: 0 auto;
 }
 
-/* cada bloque de comandos */
+/* --- 2. Tarjetas de Comandos (Glassmorphism) --- */
 .bloques {
     border-radius: 10px;
     background-color: #ffffff0d;
     border: 1px solid #ffffff1a;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 15px;
     width: 100%;
     margin: 0 auto;
-    transition: background-color 0.9s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .bloques:hover {
     background-color: #ffffff14;
-    border: 1px solid #6fe5ff66 !important;
-    /* Brillo cian en el borde al pasar el ratón */
+    border-color: #6fe5ff66 !important;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px #0000004d;
 }
 
-/*  colodel boton beta*/
-.bottom-beta {
+/* Color para los textos de 'Ejemplo:' y 'Opciones:' */
+.bloques strong,
+.bloques p:nth-of-type(2) {
+    color: #b0c4de;
+    font-weight: bold;
+}
+
+/* --- 3. Etiquetas beta y normal --- */
+.badge {
+    font-size: 0.8em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.badge.beta {
     background-color: #ff9800;
-    font-size: 0.8em;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin-right: 10px;
-    vertical-align: middle;
+    color: white;
 }
 
-/*  colodel boton normal*/
-.bottom-normal {
+.badge.normal {
     background-color: #4CAF50;
-    font-size: 0.8em;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin-right: 10px;
-    vertical-align: middle;
+    color: white;
 }
 
+/* --- 4. El Título del Comando --- */
 .titulo {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.titulo>div {
+.titulo>span:first-child {
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-/*la  descripcion debajo del titulo*/
 .descripcion {
     font-size: 0.9em;
     color: #ffffffa6;
 }
 
-.descripc.titulo>div>span {
-    font-size: 0.85em;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* Cambiar la fecha izq x fefecto */
-/* Convertir el summary en flex para separar texto y flecha */
+/* --- 5. Desplegables y Flechas (Optimizado) --- */
 .flechita {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* quita la flechita x defecto */
 .flechita::-webkit-details-marker {
     display: none;
 }
 
-/* Dibujar la flechita */
 .flechita::after {
     content: "▼";
     font-size: 0.8em;
-    color: #ffffff;
-    transition: transform 0.3s ease;
+    color: #ffffff80;
+    transition: transform 0.3s ease, color 0.3s;
 }
 
-/* flechita abierta */
-details[open] .flechita::after {
+details[open]>.flechita::after {
     transform: rotate(180deg);
     color: #6fe5ff;
+}
+
+/* Estilo para los sub-desplegables internos */
+.opciones {
+    background-color: #ffffff05;
+    border: 1px solid #ffffff0d;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* --- 6. Ejemplo y Listas --- */
+code {
+    background-color: #0000004d;
+    color: #6fe5ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+.lista-items {
+    list-style: none;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.lista-items li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lista-items li::before {
+    content: "❯";
+    color: #6fe5ff;
+    position: absolute;
+    left: 0;
+    font-size: 0.9em;
+    opacity: 0.8;
 }
