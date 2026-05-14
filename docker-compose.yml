@@ -1,9 +1,10 @@
-version: '3.8'
-
 services:
-  web-bot:
+  web-bot-blahaj:
     build: .
     container_name: web-bot-blahaj
     ports:
-      - "8080:80"
+      - "80:80"
+    volumes:
+      - .:/usr/local/apache2/htdocs/
     restart: unless-stopped
+    mem_limit: 100m
