@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /js y xml/
+Disallow: /es/mantenimiento.html
+Disallow: /en/mantenimiento.html
+
+Sitemap: https://botblahaj.com/sitemap.xml
