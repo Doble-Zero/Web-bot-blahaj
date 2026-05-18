@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <datos>
-
-    <!-- ALTA PRIORIDAD -->
-    <p.alta>   
+    <p.alta>       <!-- ALTA PRIORIDAD -->
+        <tarea>
+            <titulo>Comando /automod</titulo>
+            <prioridad>Alta</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Renombrar el comando /automod y mejorar la descripcion.</descripcion>
+        </tarea>
         <tarea>
             <titulo>Web</titulo>
             <prioridad>Alta</prioridad>
@@ -13,7 +17,7 @@
             <titulo>Traducción del bot</titulo>
             <prioridad>Alta</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Traducir los comandos del bot al Inglés. (60% completado)</descripcion>
+            <descripcion>Traducir los comandos del bot al Inglés. (60% completado 18/03/2026)</descripcion>
         </tarea>
         <tarea>
             <titulo>/help</titulo>
@@ -21,82 +25,293 @@
             <estado>Pendiente</estado>
             <descripcion>Comando que envíe un embed con instrucciones de uso y un link a la web.</descripcion>
         </tarea>
+        <tarea>
+            <titulo>/idioma</titulo>
+            <prioridad>Alta</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Cambia el idioma x defecto del bot.</descripcion>
+        </tarea>
     </p.alta>
-
-
     <!-- MEDIA PRIORIDAD -->
     <p.media>   
         <tarea>
             <titulo>Auto-Moderación Avanzada</titulo>
             <prioridad>Media</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Implementar Filtro de mayúsculas y un Anti-Spam mejorado (mensajes repetidos, menciones masivas).</descripcion>
+            <descripcion>Filtro de mayúsculas. Anti-Spam mejorado (mensajes repetidos, menciones masivas).</descripcion>
         </tarea>
         <tarea>
             <titulo>Copias de Seguridad</titulo>
             <prioridad>Media</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Sistema automático para respaldar la configuración de los servidores de manera regular.</descripcion>
+            <descripcion>Copia de seguridad diarias de las carpetas guilds.</descripcion>
         </tarea>
         <tarea>
             <titulo>Comandos de Moderación Manual</titulo>
             <prioridad>Media</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Implementar comandos como /purge (limpieza masiva), /warn (advertencias acumulativas) y /tempban (baneos temporales).</descripcion>
+            <descripcion>/purge: Limpieza masiva con filtros (bots, usuarios, texto). /warn: Sistema de advertencias acumulativas con sanciones automáticas. /tempban: Baneos temporales que se retiran automáticamente.</descripcion>
         </tarea>
     </p.media>
-
-
     <!-- BAJA PRIORIDAD -->
     <p.baja>   
         <tarea>
             <titulo>Dashboard Web</titulo>
             <prioridad>Baja</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Un panel web interactivo para configurar el bot sin tener que usar comandos directamente en Discord.</descripcion>
+            <descripcion>Un panel web simple para configurar el bot sin usar comandos, ver logs, etc.</descripcion>
         </tarea>
         <tarea>
-            <titulo>Más Juegos (Ruleta Rusa)</titulo>
+            <titulo>Log de emojis</titulo>
             <prioridad>Baja</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Añadir comando !click ruleta rusa: Juego que mutea o kickea aleatoriamente a un usuario del canal.</descripcion>
+            <descripcion>Añadir un log de emojis creados, eliminados y actualizados.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Log canales</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Borrado de canales / creación de canales / edición de canales / permisos de canales.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Sistema de Logs Mejorado</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>Limpieza a llegar a cierto tamaño.</descripcion>
+        </tarea>
+        <tarea>
+            <titulo>Minijuegos Extra</titulo>
+            <prioridad>Baja</prioridad>
+            <estado>Pendiente</estado>
+            <descripcion>!click ruleta rusa: Juego que mutea o kickea aleatoriamente a un usuario. Minijuego de piedra papel o tijera.</descripcion>
         </tarea>
         <tarea>
             <titulo>Global Ban</titulo>
             <prioridad>Baja</prioridad>
             <estado>Pendiente</estado>
-            <descripcion>Base de datos central para registrar usuarios maliciosos en todos los servidores que usan el bot.</descripcion>
+            <descripcion>Sistema de Baneos Compartidos: Base de datos central para registrar usuarios maliciosos y avisar (o banear automáticamente) al entrar en otros servidores protegidos por el bot.</descripcion>
         </tarea>
     </p.baja>
-
-
     <!-- COMPLETADO -->
     <completado>   
+        <tarea>
+            <titulo>Actualización de script de instalación</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Actualización de script de instalación (install_requirements.bat) para instalar últimas versiones.</descripcion>
+            <fecha>10/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Sistema Anti-Freeze</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de sistema Anti-Freeze (desactivar Quick Edit Mode en consola).</descripcion>
+            <fecha>10/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Refactorización de eventos</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Separación de eventos en archivos propios (on_member_update, on_user_update, on_message).</descripcion>
+            <fecha>11/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Timeout en cada evento</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de límites de tiempo (@safe_event) en los listeners para prevenir bloqueos.</descripcion>
+            <fecha>20/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Rol Mensual de la Pole</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Sistema de asignación automática de rol y recompensas al ganador del ranking mensual.</descripcion>
+            <fecha>28/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Rehacer registro de invitaciones</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Limpieza automática de invitaciones inválidas y sincronización al inicio.</descripcion>
+            <fecha>11/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Rehacer watchdog</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Sistema de vigilancia (watchdog) mejorado y más robusto.</descripcion>
+            <fecha>11/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Sistema i18n Multi-idioma</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de archivos de traducción (ES/EN) para eventos de Miembros, Invitaciones y Voz.</descripcion>
+            <fecha>12/03/2026</fecha>
+        </tarea>
         <tarea>
             <titulo>Dockerización Completa</titulo>
             <prioridad>Completado</prioridad>
             <estado>Hecho</estado>
-            <descripcion>Despliegue mediante Dockerfile y docker-compose.yml, eliminando dependencias de Windows y archivos .bat heredados.</descripcion>
+            <descripcion>Despliegue mediante Dockerfile y docker-compose.yml, eliminando dependencias de Windows (.bat).</descripcion>
             <fecha>16/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Anti Zombie / Auto-Restart</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementado vía Docker mediante la política restart: always.</descripcion>
+            <fecha>16/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Limpieza de Legado</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Eliminación de archivos .bat y código referente a ello.</descripcion>
+            <fecha>16/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Optimización de Estructura</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Requisitos integrados en la imagen de Docker para una carpeta raíz limpia.</descripcion>
+            <fecha>16/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Sistema de Rachas (Streaks)</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de contador de victorias consecutivas en el juego de la pole.</descripcion>
+            <fecha>18/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Traducción Completa de Eventos</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Localización (ES/EN) de los 11 archivos de eventos.</descripcion>
+            <fecha>18/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Minijuego de la Pole (Rachas)</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de las rachas diarias consecutivas y multiplicador de puntos.</descripcion>
+            <fecha>01/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Soporte de idioma adicional</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Añadida la traducción al idioma Portugués (PT).</descripcion>
+            <fecha>07/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Nombres en invitaciones</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Capacidad de dar nombres personalizados a los enlaces de invitación y comando /invite_name implementado.</descripcion>
+            <fecha>17/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>/Roadmap</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Comando para visualizar el roadmap directamente desde Discord mediante un embed implementado.</descripcion>
+            <fecha>17/04/2026</fecha>
         </tarea>
         <tarea>
             <titulo>Unificación de Logs</titulo>
             <prioridad>Completado</prioridad>
             <estado>Hecho</estado>
-            <descripcion>Migración completa de todas las llamadas logging root a instancias logger por módulo.</descripcion>
+            <descripcion>Migración completa de llamadas logging.* a instancias logger.</descripcion>
             <fecha>22/04/2026</fecha>
         </tarea>
         <tarea>
-            <titulo>Traducción de Eventos (i18n)</titulo>
+            <titulo>Eliminacion del comando resumen</titulo>
             <prioridad>Completado</prioridad>
             <estado>Hecho</estado>
-            <descripcion>Localización (ES/EN) de los 11 archivos de eventos para soportar servidores en varios idiomas.</descripcion>
-            <fecha>18/03/2026</fecha>
+            <descripcion>Ya que la Api de gemini dejaba de ser gratuita :(.</descripcion>
+            <fecha>23/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Limpieza de Repositorio</titulo>
+            <prioridad>Completado</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Creación de .gitignore y limpieza del índice de Git para excluir logs y datos privados.</descripcion>
+            <fecha>22/04/2026</fecha>
         </tarea>
     </completado>
-
-    
     <errores>  <!-- ERRORES -->
+        <tarea>
+            <titulo>Error AttributeError: 'User' object</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Corrección de error AttributeError: 'User' object has no attribute 'timed_out_until' en logs.</descripcion>
+            <fecha>09/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Ruta de archivo en invites_info.py</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Corrección de ruta de archivo en invites_info.py (ahora lee join_log.json en vez de invites.json).</descripcion>
+            <fecha>19/02/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Logs de invitaciones</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Correccion de los embeds de creación y eliminación.</descripcion>
+            <fecha>11/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Gestión de errores 503</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Implementación de reintentos y timeouts extendidos (30s) para mitigar caídas de la API de Discord.</descripcion>
+            <fecha>12/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Estabilización del Inicio</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Refactorización de bot.py para eliminar bucles de sesión corrupta y sincronización robusta con el script .bat.</descripcion>
+            <fecha>12/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Cambio estetico</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Correccion del embed on_member_update.</descripcion>
+            <fecha>20/03/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Minijuego de la Pole</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Ajuste de horario (>0s) para evitar fallos de timestamp de Discord, implementación de logs preciso.</descripcion>
+            <fecha>17/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Logs de errores</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Corrección del error AttributeError: 'NoneType' object has no attribute 'name' al recibir mensajes directos.</descripcion>
+            <fecha>17/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Arreglo de Imports</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Corrección de ModuleNotFoundError en roadmap.py y NameError en config_automod_canales.py.</descripcion>
+            <fecha>22/04/2026</fecha>
+        </tarea>
+        <tarea>
+            <titulo>Error de Indentación</titulo>
+            <prioridad>Errores</prioridad>
+            <estado>Hecho</estado>
+            <descripcion>Corrección de IndentationError en los comandos de configuración tras la refactorización.</descripcion>
+            <fecha>22/04/2026</fecha>
+        </tarea>
     </errores>
-
 </datos>
