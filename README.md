@@ -38,4 +38,23 @@
     - creado carpetas para los 2 idiomas
     - traducido info.html, comands.html al 50%
     - creado datos.xml el anterio se va a la mierda.
-    
+#### [Día 8]:
+    - Migrada toda la web a docker
+    - creado el dockerfile y docker-compose.yml.
+    - La web ahora funciona con apache2 alpine.
+    - Por ahora cerrada en localhost.
+    - creado un index.html en / que redirecciona a /es/index.html.
+#### [Día 9]:
+    - Compre un dominio propio botblahaj.com en cloudflare.
+    - docker-compose actualizado para salida a internet.
+    - DNS de cloudflare hace un proxi a mi NOIP y de ahi redirije a servidor apache.
+    - la web ya es publicamente accesible en botblahaj.com
+    - Configurado https en cloudflare.
+    - corregido un fallo con los idiomas, el icono de la vanderita no se veia igual en todos los navegadores.
+    - Optimizado el archivo comandos.css.
+#### [Día 10]:
+    - Añadido en index.html "themecolor" "descripcion" "keywords" y mas cosas cosas.
+    - Añadido mantenimiento.html  para los enlaces que aun no estan terminados.
+    - Corregido en datos.xml no encontraba la etiqueta errores.
+    - creado robots.txt y sitemap.xml. 
+    - editado .htaccess para bloquear que se muestren algunos archivos.
