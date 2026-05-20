@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Estado | Bot Blåhaj">
+    <meta property="og:description" content="Monitorea en tiempo real el estado del Bot.">
+    <meta property="og:image" content="https://botblahaj.com/imagenes/logo.png">
+    <meta property="og:url" content="https://botblahaj.com/es/estado.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Estado | Bot Blåhaj</title>
+    <link rel="alternate" hreflang="en" href="https://botblahaj.com/en/status.html">
+    <link rel="icon" href="../imagenes/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/estado.css?v=1.1">
+</head>
+
+<body>
+    <nav class="navegacion"> <!--Menu de navegacion para todas las paginas-->
+        <ul style="display:flex; gap:30px ;margin:0% 20% 0% 20%">
+            <li><a href="../index"><img style="max-width: 26px;" alt="." src="../imagenes/logo.png"></a></li>
+            <li><a href="info">Información</a></li>
+            <li><a href="comands">Comandos</a></li>
+            <li> <!--Desplegable de recursos-->
+                <details>
+                    <summary style="cursor:pointer;">Recursos</summary>
+                    <ul style="position: absolute;">
+                        <li><a href="mantenimiento">Soporte</a></li>
+                        <li><a href="roadmap">Roadmap</a></li>
+                        <li><a href="estado"><u>Estado</u></a></li>
+                    </ul>
+                </details>
+            </li>
+            <li style="margin-left: auto;"> <!--Desplegable de Idiomas-->
+                <details>
+                    <summary style="cursor:pointer;">🇪🇸 ES</summary>
+                    <ul style="position: absolute;">
+                        <li><a href="estado">🇪🇸 Español</a></li>
+                        <li><a href="../en/status">🇬🇧 English</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="mantenimiento">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main style="margin: 0 auto; max-width:1000px; padding:20px;">
+        <div class="titulo">
+            <h1 class="titulos-color">Estado del Bot</h1>
+            <p>Monitorea la estabilidad y el rendimiento del Bot Blåhaj en tiempo real.</p>
+        </div>
+
+        <!-- Titulo -->
+        <div class="fondo-estado caja">
+            <div id="status-indicator" class="indicador online"></div>
+            <h2 id="status-banner-text" class="text-success" style="margin: 0; font-size: 1.6em;">Cargando estado del
+                bot...</h2>
+        </div>
+
+        <!-- Cuadrados con la info -->
+        <div class="metricas-grid">
+            <div class="metrica-card caja">
+                <h3>WebSocket Ping</h3>
+                <p id="metric-ping" class="metrica-valor">--</p>
+            </div>
+            <div class="metrica-card caja">
+                <h3>Mensajes Ping</h3>
+                <p id="metric-servers" class="metrica-valor">--</p>
+            </div>
+            <div class="metrica-card caja">
+                <h3>Servidores Totales</h3>
+                <p id="metric-users" class="metrica-valor">--</p>
+            </div>
+            <div class="metrica-card caja">
+                <h3>Tiempo de Actividad</h3>
+                <p id="metric-uptime" class="metrica-valor">--</p>
+            </div>
+        </div>
+
+        <!-- Otro -->
+        <div class=" caja" style="padding: 30px;">
+            <div style="max-width: 500px; margin: 0 auto">
+                <img src="../imagenes/wip.gif" alt="Sección en construcción" style="width: 100%">
+            </div>
+        </div>
+    </main>
+
+    <!-- Script de lógica de estado -->
+    <script src="../js%20y%20xml/estado.js"></script>
+</body>
+
+</html>
