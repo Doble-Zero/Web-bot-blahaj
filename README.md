@@ -15,7 +15,8 @@
     - añadido todo el texto del html al español.xml. 
     - creado el ingles.xml (traduccido automaticamente por pereza)
 #### [Día 2]:
-    - en comandos.html intentado hacer un desplegable con toda la informacion de los comando utilizando lo mismo que en el navbar, pero se sopala uno encima del otro. (solucionado ya).
+    - en comandos.html intentado hacer un desplegable con toda la informacion de los comando utilizando
+    lo mismo que en el navbar, pero se sopala uno encima del otro. (solucionado ya).
     - añadido un css interno muy basico para ajustar los marjenes y otras cosas.
 #### [Día 3]:
     - creado el css de index.html con animaciones y un botom insirados en otras webs.
