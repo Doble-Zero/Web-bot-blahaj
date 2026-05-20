@@ -1,13 +1,11 @@
 # Diario de Desarrollo - Web del Bot Blåhaj
 
 ## 1. Cosas por Hacer
-- [ ] Hacer el DTL 
 - [ ] mix with: 800px 
-- [ ] Ajustar tamaño letras roadmap.html
 - [ ] Adjuntar los enlaces de soporte.
 
 ## 2. Fallos
-- [ ] Despegables de la navbar se ven mal.
+- [ ] ajustar la version movil.
 
 ## 3. Diario de Desarrollo
 #### [Día 1]:
@@ -58,3 +56,7 @@
     - Corregido en datos.xml no encontraba la etiqueta errores.
     - creado robots.txt y sitemap.xml. 
     - editado .htaccess para bloquear que se muestren algunos archivos.
+#### [Día 11]:
+    - creado estado.html y estado.css (sin terminar).
+    - creado estado.js (sin terminar).
+    - restructurado el order de archivos, ahora index.html esta en la raiz e enlaza a la carpeta /es.
