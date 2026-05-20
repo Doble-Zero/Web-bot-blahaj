@@ -1,7 +1,3 @@
-// ==========================================
-// NO TENGO NI PUTA IDEA QUE HACE ESTO, PERO EHHH FUNCIONA. GRACIAS GEMINI. <3
-// ==========================================
-
 // Variables globales para guardar los datos leídos del XML
 let roadmapData = [];
 
@@ -9,7 +5,7 @@ let roadmapData = [];
 document.getElementById('estado').textContent = 'Cargando tareas del Roadmap...';
 
 // 2. Fetch del XML
-fetch('../js/datos.xml')
+fetch('../js%20y%20xml/datos.xml')
     .then(respuesta => {
         if (!respuesta.ok) throw new Error("Error HTTP " + respuesta.status);
         return respuesta.text();
@@ -102,8 +98,8 @@ function filtrarRoadmap(prioridadDeseada) {
 
         // Inyectar HTML
         tarjeta.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="margin: 0; color: white;">${iconoPrioridad} ${tarea.titulo}</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                <h3 style="margin: 0; color: white; word-break: break-word;">${iconoPrioridad} ${tarea.titulo}</h3>
                 ${fechaHTML}
             </div>
             <p style="color: rgba(255,255,255,0.7); font-size: 0.9em; margin-top: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
