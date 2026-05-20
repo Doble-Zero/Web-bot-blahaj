@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Roadmap | Bot Blåhaj">
+    <meta property="og:description"
+        content="El mejor bot de moderación, configuración y logs para tu servidor de Discord.">
+    <meta property="og:image" content="https://botblahaj.com/imagenes/logo.png">
+    <meta property="og:url" content="https://botblahaj.com/es/roadmap.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Roadmap | Bot Blåhaj</title>
     <link rel="icon" href="../imagenes/logo.png" type="image/png">
     <link rel="stylesheet" href="../css/general.css">
@@ -16,16 +23,16 @@
     <nav class="navegacion"> <!--Menu de navegacion para todas las paginas-->
         <ul style="display:flex; gap:30px; justify-content:center; padding: 0% 20% 0% 20%; margin:auto;">
             <!--display:flex centrado sin márgenes forzados-->
-            <li><a href="index.html"><img style="max-width: 26px;" src="../imagenes/logo.png"></a></li>
-            <li><a href="info.html">Información</a></li>
-            <li><a href="comands.html">Comandos</a></li>
+            <li><a href="../index"><img style="max-width: 26px;" alt="." src="../imagenes/logo.png"></a></li>
+            <li><a href="info">Información</a></li>
+            <li><a href="comands">Comandos</a></li>
             <li> <!--Desplegable de recursos-->
                 <details>
                     <summary style="cursor:pointer;">Recursos</summary>
                     <ul style="position: absolute;">
-                        <li><a href="">Soporte</a></li>
-                        <li><a href="roadmap.html"><u>Roadmap</u></a></li>
-                        <li><a href="">Estado</a></li>
+                        <li><a href="mantenimiento">Soporte</a></li>
+                        <li><a href="roadmap"><u>Roadmap</u></a></li>
+                        <li><a href="estado">Estado</a></li>
                     </ul>
                 </details>
             </li>
@@ -33,18 +40,18 @@
                 <details>
                     <summary style="cursor:pointer;">🇪🇸 ES</summary>
                     <ul style="position: absolute;">
-                        <li><a href="roadmap.html">🇪🇸 EJpaño</a></li>
-                        <li><a href="../en/roadmap.html">🇬🇧 Gringo</a></li>
+                        <li><a href="roadmap">🇪🇸 Español</a></li>
+                        <li><a href="../en/roadmap">🇬🇧 English</a></li>
                     </ul>
                 </details>
             </li>
-            <li><a href="">Iniciar Sesión</a></li>
+            <li><a href="mantenimiento">Iniciar Sesión</a></li>
         </ul>
     </nav>
 
     <main style="margin: 0 auto; max-width:1000px; padding:20px;">
 
-        <div> <!--Titulo y descripcion-->
+        <div>
             <h1>Roadmap de Desarrollo</h1>
             <p>Este documento interactivo sirve para rastrear las futuras actualizaciones y mejoras planificadas
                 para el bot.</p>
@@ -52,45 +59,60 @@
         </div>
 
         <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-            <!-- Barra lateral de filtros -->
-            <aside style="min-width: 200px; padding: 20px; background-color: rgba(255, 255, 255, 0.05); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); height: fit-content; backdrop-filter: blur(10px);">
-                <h3 style="margin-top: 0; color: #6fe5ff;">Filtrar Tareas</h3>
+            <!-- Barrita lateral -->
+            <aside
+                style="min-width: 200px; padding: 20px; background-color: rgba(255, 255, 255, 0.05); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); height: fit-content; backdrop-filter: blur(10px);">
+                <h2 style="margin-top: 0; color: #6fe5ff;">Filtrar Tareas</h2>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Todas')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: #6f7bff; color: white; font-weight: bold;">Ver Todas</button>
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Alta')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🔴 Alta Prioridad</button>
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Media')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🟡 Media Prioridad</button>
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Baja')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🟢 Baja Prioridad</button>
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Completado')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">✅ Completado</button>
-                    <button class="filtro-btn" onclick="filtrarRoadmap('Errores')" style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🐛 Errores Corregidos</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Todas')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: #6f7bff; color: white; font-weight: bold;">Ver
+                        Todas</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Alta')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🔴
+                        Alta Prioridad</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Media')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🟡
+                        Media Prioridad</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Baja')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🟢
+                        Baja Prioridad</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Completado')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">✅
+                        Completado</button>
+                    <button class="filtro-btn" onclick="filtrarRoadmap('Errores')"
+                        style="cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: rgba(255,255,255,0.1); color: white;">🐛
+                        Errores Corregidos</button>
                 </div>
             </aside>
 
-            <!-- Contenedor principal de roadmap -->
-            <div style="flex-grow: 1;">
+            <!-- Con tenedor principal de roadmap -->
+            <div style="flex: 1; min-width: 300px;">
                 <p id="estado" style="color: #6fe5ff; font-weight: bold;">Cargando tareas del Roadmap...</p>
-                <div id="lista-roadmap" style="display: grid; grid-template-columns: repeat(1, 1fr); gap:15px;">
-                    <!-- JS inyectará las tareas aquí -->
+                <div id="lista-roadmap" style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap:15px;">
                 </div>
             </div>
         </div>
 
-        <!-- Estructura del Modal -->
+        <!-- Carga de los datos -->
         <div id="miModal" class="modal-overlay" onclick="toggleModal()">
             <div class="modal-content" onclick="event.stopPropagation()">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <span id="modal-etiqueta" style="padding: 3px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; background: #6fe5ff; color: #0a192f;">Alta</span>
+                    <span id="modal-etiqueta"
+                        style="padding: 3px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; background: #6fe5ff; color: #0a192f;">Alta</span>
                     <span id="modal-fecha" style="font-size: 0.9em; color: rgba(255,255,255,0.5);">Fecha</span>
                 </div>
                 <h2 id="modal-titulo" class="titulos-color" style="margin-top: 0; text-align: left;">Título Tarea</h2>
                 <hr style="margin-bottom: 15px; opacity: 0.2;">
                 <p id="modal-desc" style="color: #dbdee1; text-align: left;">Descripción detallada aquí.</p>
-                
-                <button class="botomcito" onclick="toggleModal()" style="cursor: pointer; border: none; font-size: 1em; margin-top: 20px; width: 100%;">Cerrar Detalles</button>
+
+                <button class="botomcito" onclick="toggleModal()"
+                    style="cursor: pointer; border: none; font-size: 1em; margin-top: 20px; width: 100%;">Cerrar
+                    Detalles</button>
             </div>
         </div>
 
         <!-- Script de JS -->
-        <script src="../js/script.js"></script>
+        <script src="../js%20y%20xml/script.js"></script>
     </main>
 </body>
 
