@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comandos | Bot Blåhaj</title>
+    <meta property="og:title" content="Commands | Blåhaj Bot">
+    <meta property="og:description"
+        content="The best moderation, configuration, and logging bot for your Discord server.">
+    <meta property="og:image" content="https://botblahaj.com/imagenes/logo.png">
+    <meta property="og:url" content="https://botblahaj.com/en/comands.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Commands | Blåhaj Bot</title>
     <link rel="icon" href="../imagenes/logo.png" type="image/png">
+    <link rel="alternate" hreflang="es" href="https://botblahaj.com/es/comands.html">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/comandos.css">
@@ -14,17 +22,16 @@
 <body>
     <nav class="navegacion"> <!-- Navigation menu -->
         <ul style="display:flex; gap:30px ;margin:0% 20% 0% 20%">
-            <!-- Enlaces apuntan a los archivos en inglés dentro de la misma carpeta /en -->
-            <li><a href="../en/index.html"><img style="max-width: 26px;" src="../imagenes/logo.png"></a></li>
-            <li><a href="../en/info.html">Information</a></li>
-            <li><a href="../en/comands.html"><u>Commands</u></a></li>
+            <li><a href="../index"><img style="max-width: 26px;" alt="." src="../imagenes/logo.png"></a></li>
+            <li><a href="info">Information</a></li>
+            <li><a href="comands"><u>Commands</u></a></li>
             <li> <!-- Resources Dropdown -->
                 <details>
                     <summary style="cursor:pointer;">Resources</summary>
                     <ul style="position: absolute;">
-                        <li><a href="">Support</a></li>
-                        <li><a href="../en/roadmap.html">Roadmap</a></li>
-                        <li><a href="">Status</a></li>
+                        <li><a href="mantenimiento">Support</a></li>
+                        <li><a href="roadmap">Roadmap</a></li>
+                        <li><a href="status">Status</a></li>
                     </ul>
                 </details>
             </li>
@@ -32,249 +39,250 @@
                 <details>
                     <summary style="cursor:pointer;">🇬🇧 EN</summary>
                     <ul style="position: absolute;">
-                        <li><a href="../es/comands.html">🇪🇸 EJpaño</a></li>
-                        <li><a href="../en/comands.html">🇬🇧 Gringo</a></li>
+                        <li><a href="../es/comands">🇪🇸 Español</a></li>
+                        <li><a href="comands">🇬🇧 English</a></li>
                     </ul>
                 </details>
             </li>
-            <li><a href="">Login</a></li>
+            <li><a href="mantenimiento">Login</a></li>
         </ul>
     </nav>
 
-    <main style="margin:3% 20% 5% 20%">
-        <h2 class="titulos-color">Comandos del Bot</h2>
-        <p class="titulos-color">Una descripcion de cada uno de los comandos del bot y ejemplo de funcionamiento:</p>
+    <main style="max-width: 900px; min-width: 600px; margin: 5% auto; padding: 0 20px;">
+        <div class="titulo-principal">
+            <h1>Bot Commands</h1>
+            <p>Explore the full list of moderation, configuration, and utility tools. Click on each block to see
+                details, actions, and usage examples.</p>
+        </div>
         <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap:15px;">
 
-            <!-- Comando config_canales -->
+            <!-- Command config_canales -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Config Canales
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Añade canales solo media o canales solo texto.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Config Channels
+                        </span>
+                        <span class="descripcion">Add media-only or text-only channels.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /config_canales [accion]</code> </p>
-                    <p>Opciones:</p>
-                    <details>
-                        <summary>Acciones</summary>
-                        <ul>
-                            <li> Ver configuarcion</li>
-                            <li> Solo media > Añadir canal</li>
-                            <li> Solo media > Eliminar canal</li>
-                            <li> Solo texto > Añadir canal</li>
-                            <li> Solo texto > Eliminar canal</li>
+                <div>
+                    <p> <strong>Example:</strong> <code> /config_canales [action]</code> </p>
+                    <p>Options:</p>
+                    <details class="opciones">
+                        <summary class="flechita">Actions</summary>
+                        <ul class="lista-items">
+                            <li> View configuration</li>
+                            <li> Media only > Add channel</li>
+                            <li> Media only > Remove channel</li>
+                            <li> Text only > Add channel</li>
+                            <li> Text only > Remove channel</li>
                         </ul>
                     </details>
                 </div>
             </details>
 
-            <!-- Comando config_autoroles -->
+            <!-- Command config_autoroles -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Config Autoroles
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Asigna roles automaticamente a los usuarios que escriban en un
-                            canal.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Config Autoroles
+                        </span>
+                        <span class="descripcion">Automatically assign roles to users who message in a channel.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /config_autoroles [estado] [canal] [rol]</code> </p>
-                    <p>Opciones:</p>
-                    <details>
-                        <summary>Estado</summary>
-                        <ul>
-                            <li>Activar</li>
-                            <li>Desactivar</li>
+                <div>
+                    <p> <strong>Example:</strong> <code> /config_autoroles [status] [channel] [role]</code> </p>
+                    <p>Options:</p>
+                    <details class="opciones">
+                        <summary class="flechita">Status</summary>
+                        <ul class="lista-items">
+                            <li>Enable</li>
+                            <li>Disable</li>
                         </ul>
                     </details>
-                    <details>
-                        <summary>Canal</summary>
-                        <ul>
-                            <li>Selecciona el canal donde se activara</li>
+                    <details class="opciones">
+                        <summary class="flechita">Channel</summary>
+                        <ul class="lista-items">
+                            <li>Select the channel to enable it on</li>
                         </ul>
                     </details>
-                    <details>
-                        <summary>Rol</summary>
-                        <ul>
-                            <li>Rol a asignar</li>
+                    <details class="opciones">
+                        <summary class="flechita">Role</summary>
+                        <ul class="lista-items">
+                            <li>Role to assign</li>
                         </ul>
                     </details>
                 </div>
             </details>
 
-            <!-- Comando config_logs  -->
+            <!-- Command config_logs -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Config Logs
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Configura donde se envian cada uno de los logs.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Config Logs
+                        </span>
+                        <span class="descripcion">Configure where each log is sent.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /config_logs [accion]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /config_logs [action]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando config_pole-->
+            <!-- Command config_pole -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-beta">BETA</span>Config Pole
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Configura el minijuego Pole.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge beta">BETA</span>Config Pole
+                        </span>
+                        <span class="descripcion">Configure the Pole minigame.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /config_pole [estado] [canal]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /config_pole [status] [channel]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando config_protecciones -->
+            <!-- Command config_protecciones -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Config Protecciones
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Configura los diferestes tipos de protecciones para el
-                            servidor.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Config Protections
+                        </span>
+                        <span class="descripcion">Configure different types of protections for the server.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /config_protecciones [accion]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /config_protecciones [action]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando invite-->
+            <!-- Command invite -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Invite
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Genera una invitación manual para el bot.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Invite
+                        </span>
+                        <span class="descripcion">Generate a manual invite for the bot.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /invite</code> </p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /invite</code> </p>
                 </div>
             </details>
 
-            <!-- Comando invites-->
+            <!-- Command invites -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Invites
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Muestra las personas invitadas por un usuario.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Invites
+                        </span>
+                        <span class="descripcion">Show people invited by a user.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /invites [usuario]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /invites [user]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando invites_name-->
+            <!-- Command invites_name -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-beta">BETA</span>Invites Name
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Asigna un alias a una invitación para identificarla.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge beta">BETA</span>Invites Name
+                        </span>
+                        <span class="descripcion">Assign an alias to an invite to identify it.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /invites_name [code] [name]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /invites_name [code] [name]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando ping-->
+            <!-- Command ping -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-normal">BOT</span>Ping
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Muestra el estado del bot.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge normal">BOT</span>Ping
+                        </span>
+                        <span class="descripcion">Show the bot's status.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /ping</code> </p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /ping</code> </p>
                 </div>
             </details>
 
-            <!-- Comando Pole-->
+            <!-- Command Pole -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-beta">BETA</span>Pole
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Minijuego de la pole, muestra los ranquis y reglas.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge beta">BETA</span>Pole
+                        </span>
+                        <span class="descripcion">Pole minigame, show rankings and rules.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /pole [accion]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /pole [action]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
-            <!-- Comando roadmap-->
+            <!-- Command roadmap -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-beta">BETA</span>Roadmap
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Muestra la hoja de ruta del bot.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge beta">BETA</span>Roadmap
+                        </span>
+                        <span class="descripcion">Show the bot's roadmap.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /roadmap</code> </p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /roadmap</code> </p>
                 </div>
             </details>
 
-            <!-- Comando resumen-->
+            <!-- Command resumen -->
             <details name="comandos" class="bloques">
                 <summary class="flechita" style="cursor:pointer;">
-                    <div class="titulo">
-                        <div> <!--Titulo-->
-                            <span class="bottom-beta">BETA</span>Resumen (temporalmente desactivado)
-                        </div> <!--Descripcion-->
-                        <span class="descripcion">Genera un resumen de los mensajes en un canal.</span>
-                    </div>
+                    <span class="titulo">
+                        <span>
+                            <span class="badge beta">BETA</span>Summary (temporarily disabled)
+                        </span>
+                        <span class="descripcion">Generate a summary of messages in a channel.</span>
+                    </span>
                 </summary>
                 <hr>
-                <div> <!--Informacion del comando-->
-                    <p> <strong>Ejemplo:</strong> <code> /resumen [canal] [tiempo]</code> </p>
-                    <p>Opciones:</p>
+                <div>
+                    <p> <strong>Example:</strong> <code> /resumen [channel] [time]</code> </p>
+                    <p>Options:</p>
                 </div>
             </details>
 
